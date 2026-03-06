@@ -29,6 +29,9 @@ fn main() {
     let tgt = env::var("TARGET").unwrap();
     println!("debug: Building for target: '{}'", tgt);
 
+    #[cfg(feature = "libiio_v0_26")]
+    println!("debug: Using bindings for libiio v0.26");
+    
     #[cfg(feature = "libiio_v0_25")]
     println!("debug: Using bindings for libiio v0.25");
 

@@ -16,6 +16,7 @@ Linux Industrial I/O (IIO) Support
 [features]
 default = ["libiio_v0_25"]
 utils = ["clap"]
+libiio_v0_26 = ["libiio-sys/libiio_v0_26"]
 libiio_v0_25 = ["libiio-sys/libiio_v0_25"]
 libiio_v0_24 = ["libiio-sys/libiio_v0_24"]
 libiio_v0_23 = ["libiio-sys/libiio_v0_23"]

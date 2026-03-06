@@ -30,6 +30,13 @@
 
 // ----- Use bindings for libiio v0.25 -----
 
+
+#[cfg(all(unix, feature = "libiio_v0_26", target_pointer_width = "64"))]
+include!(concat!(
+    env!("CARGO_MANIFEST_DIR"),
+    "/bindings/bindings-0.26_64.rs"
+));
+
 #[cfg(all(unix, feature = "libiio_v0_25", target_pointer_width = "64"))]
 include!(concat!(
     env!("CARGO_MANIFEST_DIR"),
